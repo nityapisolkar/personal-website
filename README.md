@@ -1,11 +1,4 @@
-# personal-website
-personal website: nitya pisolkar!
-
+# nityapisolkar.github.io
+my personal website!
 sections:
-who am i?
-
-art
-
-dev
-
-contact
+about, dev, gallery, contact me
