@@ -5,141 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nitya pisolkar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel = "stylesheet" href = "style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding-top: 0.3in;
-            background-color: #F2F0ED;
-            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cstyle%3E%20rect%20%7B%20fill%3A%20rgba(82,72,69,0.102)%3B%20opacity%3A%200.5%3B%20%7D%20%3C%2Fstyle%3E%20%3Crect%20x%3D%220%25%22%20y%3D%220%25%22%20width%3D%2250%25%22%20height%3D%2250%25%22%20%2F%3E%20%3Crect%20x%3D%2250%25%22%20y%3D%2250%25%22%20width%3D%2250%25%22%20height%3D%2250%25%22%20%2F%3E%20%3Crect%20x%3D%2250%25%22%20y%3D%220%25%22%20width%3D%2250%25%22%20height%3D%2250%25%22%20style%3D%22opacity%3A%201%22%20%2F%3E%3C%2Fsvg%3E');
-            background-position: center;
-            background-repeat: repeat;
-            background-attachment: fixed;
-            background-size: 277px;
-            overflow: hidden;
-        }
-        .navbar {
-            position: sticky;
-            top: 10px;
-            max-width: 900px;
-            margin: 0 auto 20px auto;
-            padding: 10px 20px;
-            background: rgba(255, 255, 255, 0.5);
-            border-radius: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-        }
-        .navbar .links, .navbar .social {
-            display: flex;
-            align-items: center;
-        }
-        .navbar .links a {
-            text-decoration: none;
-            color: #333;
-            margin: 0 10px;
-            position: relative;
-        }
-        .navbar .links a::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: #333;
-            visibility: hidden;
-            transform: scaleX(0);
-            transition: all 0.3s ease-in-out;
-        }
-        .navbar .links a:hover::after {
-            visibility: visible;
-            transform: scaleX(1);
-        }
-        .navbar .social a {
-            margin: 0 10px;
-            color: #333;
-            text-decoration: none;
-            font-size: 24px;
-        }
-        .navbar .social a:hover {
-            color: #4a6351;
-        }
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 15px;
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-        h1 {
-            text-transform: lowercase;
-            text-align: center;
-            background: linear-gradient(90deg, #4A6351 25%, #90B095 75%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin: 0;
-            font-size: 60px;
-        }
-        .bio {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #000;
-        }
-        .social-media {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .social-media a {
-            margin: 0 10px;
-            color: #333;
-            text-decoration: none;
-            font-size: 24px;
-        }
-        .social-media a:hover {
-            color: #555;
-        }
-        .contact-form {
-            display: none;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .contact-form textarea {
-            resize: vertical;
-        }
-        .contact-form button {
-            padding: 10px 20px;
-            border: none;
-            background: #333;
-            color: #fff;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .contact-form button:hover {
-            background: #555;
-        }
-    </style>
+    
 </head>
 <body>
     <div class="navbar">
         <div class="links">
-            <a href="#art">art</a>
             <a href="#dev">dev</a>
-            <a href="#contact">contact me</a>
+            <a href="#gallery">gallery</a>
         </div>
         <div class="social">
             <a href="https://www.instagram.com/nityaxp" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -147,27 +21,52 @@
         </div>
     </div>
     <div class="container">
-        <h1>nitya pisolkar.</h1>
-        <p class="bio">web developer. programmer. artist.</p>
-        <p class="bio">Hey! Welcome to my page. I'm a sophomore at AMHS and my passion lies at the intersection of computer science and biology. Hope to see you around.</p>
-
-        <div class="contact-form" id="contact">
-            <form action="https://example.com/contact" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
+        <div class="header-content">
+            <div class="text-content">
+                <h1>nitya pisolkar.</h1>
+                <p class="whoami">web developer. programmer. artist.</p>
+            </div>
+            
+            <img 
+                class="profile-image" draggable = "false"
+                src="https://lh3.googleusercontent.com/a/ACg8ocKZ-puHiMQ1-r-bCo1AWaQnruLDqxCtc-yBAsbWsYSg90mA_q3G=s480-p-k-rw-no" 
+                alt="Profile Picture"
+            />
         </div>
+        <div class = "about-content">
+            <h2>about.</h2>
+            <p class="bio">Hey! Welcome to my page. I'm a sophomore at AMHS and my passion lies at the intersection of computer science and biology. Hope to see you around. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel justo nec enim finibus aliquet. Etiam venenatis volutpat bibendum. Aliquam quis cursus metus. Sed id ipsum elit. Proin faucibus dictum ligula, sed pellentesque sem eleifend nec. Duis et vestibulum orci. Duis velit enim, tempus at efficitur id, ultricies a sapien. Donec est lacus, efficitur id aliquet ac, commodo ut mi. Integer leo justo, sagittis vel rhoncus malesuada, scelerisque ultrices lacus.
+
+                Duis augue ante, interdum et felis vel, viverra volutpat felis. Nullam pellentesque massa quis justo imperdiet sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque neque erat, ultrices vitae pretium et, tempus sed mi. Vestibulum mollis orci urna. Nullam quis diam id felis vehicula lobortis at vitae enim. Etiam ac volutpat tellus.
+                
+                Phasellus viverra purus a quam cursus tempus. Integer sit amet pulvinar eros. Proin eu lectus quis risus pharetra consequat. Etiam non augue sed nunc facilisis feugiat. Cras dictum tempor lacinia. Donec condimentum nisl ipsum, sit amet feugiat ipsum dapibus dapibus. Duis tincidunt suscipit justo, a venenatis turpis cursus ac. Integer sed sapien ante.</p>
+        </div>
+        <div class = "dev-content">
+            <h2>dev.</h2>
+            <p class = "bio"> Hey! Welcome to my page. I'm a sophomore at AMHS and my passion lies at the intersection of computer science and biology. Hope to see you around. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel justo nec enim finibus aliquet. Etiam venenatis volutpat bibendum. Aliquam quis cursus metus. Sed id ipsum elit. Proin faucibus dictum ligula, sed pellentesque sem eleifend nec. Duis et vestibulum orci. Duis velit enim, tempus at efficitur id, ultricies a sapien. Donec est lacus, efficitur id aliquet ac, commodo ut mi. Integer leo justo, sagittis vel rhoncus malesuada, scelerisque ultrices lacus.
+
+                Duis augue ante, interdum et felis vel, viverra volutpat felis. Nullam pellentesque massa quis justo imperdiet sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque neque erat, ultrices vitae pretium et, tempus sed mi. Vestibulum mollis orci urna. Nullam quis diam id felis vehicula lobortis at vitae enim. Etiam ac volutpat tellus.
+                
+                Phasellus viverra purus a quam cursus tempus. Integer sit amet pulvinar eros. Proin eu lectus quis risus pharetra consequat. Etiam non augue sed nunc facilisis feugiat. Cras dictum tempor lacinia. Donec condimentum nisl ipsum, sit amet feugiat ipsum dapibus dapibus. Duis tincidunt suscipit justo, a venenatis turpis cursus ac. Integer sed sapien ante.</p>
+        </div>
+        <div class = "gallery-content">
+            <h2>gallery.</h2>
+            <p class = "bio"> Hey! Welcome to my page. I'm a sophomore at AMHS and my passion lies at the intersection of computer science and biology. Hope to see you around. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel justo nec enim finibus aliquet. Etiam venenatis volutpat bibendum. Aliquam quis cursus metus. Sed id ipsum elit. Proin faucibus dictum ligula, sed pellentesque sem eleifend nec. Duis et vestibulum orci. Duis velit enim, tempus at efficitur id, ultricies a sapien. Donec est lacus, efficitur id aliquet ac, commodo ut mi. Integer leo justo, sagittis vel rhoncus malesuada, scelerisque ultrices lacus.
+
+                Duis augue ante, interdum et felis vel, viverra volutpat felis. Nullam pellentesque massa quis justo imperdiet sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque neque erat, ultrices vitae pretium et, tempus sed mi. Vestibulum mollis orci urna. Nullam quis diam id felis vehicula lobortis at vitae enim. Etiam ac volutpat tellus.
+                
+                Phasellus viverra purus a quam cursus tempus. Integer sit amet pulvinar eros. Proin eu lectus quis risus pharetra consequat. Etiam non augue sed nunc facilisis feugiat. Cras dictum tempor lacinia. Donec condimentum nisl ipsum, sit amet feugiat ipsum dapibus dapibus. Duis tincidunt suscipit justo, a venenatis turpis cursus ac. Integer sed sapien ante.</p>
+        </div>
+
     </div>
+    <footer>2025 © nitya pisolkar</footer>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
-    <script>
-        document.querySelector('a[href="#contact"]').onclick = function() {
-            document.querySelector('.contact-form').style.display = 'block';
-        }
-    </script>
+
 </body>
 </html>
+
+
 
 
