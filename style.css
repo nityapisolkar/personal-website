@@ -1,4 +1,154 @@
-html {
-  height: 100%;
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding-top: 0.3in;
+  background-color: #F2F0ED;
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cstyle%3E%20rect%20%7B%20fill%3A%20rgba(82,72,69,0.102)%3B%20opacity%3A%200.5%3B%20%7D%20%3C%2Fstyle%3E%20%3Crect%20x%3D%220%25%22%20y%3D%220%25%22%20width%3D%2250%25%22%20height%3D%2250%25%22%20%2F%3E%20%3Crect%20x%3D%2250%25%22%20y%3D%2250%25%22%20width%3D%2250%25%22%20height%3D%2250%25%22%20%2F%3E%20%3Crect%20x%3D%2250%25%22%20y%3D%220%25%22%20width%3D%2250%25%22%20height%3D%2250%25%22%20style%3D%22opacity%3A%201%22%20%2F%3E%3C%2Fsvg%3E');
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 277px;
+}
+.navbar {
+  position: sticky;
+  top: 10px;
+  max-width: 1000px;
+  margin: 0 auto 20px auto;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+.navbar .links, .navbar .social {
+  display: flex;
+  align-items: center;
+}
+.navbar .links a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+  position: relative;
+}
+.navbar .links a::after {
+  content: '';
+  position: absolute;
   width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.navbar .links a:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.navbar .social a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 24px;
+}
+.navbar .social a:hover {
+  color: #4a6351;
+}
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+h1 {
+  text-transform: lowercase;
+  text-align: left;
+  background: linear-gradient(90deg, #4A6351 25%, #90b095 75%); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 8px; 
+  font-size: 60px;
+  background-size: 100% auto;
+  background-clip: text; 
+
+  /* figure out this whole gradient thing later because it's not the star of the show tbh */
+}
+.whoami {
+  text-align: left;
+  margin: 15px;
+  margin-bottom: 20px;
+  font-size:22px;
+  font-weight: bold;
+  color: #000;
+}
+.bio {
+  text-align: left;
+  margin: 15px;
+  margin-bottom: 20px;
+  color: #000;
+}
+.social-media {
+  text-align: center;
+  margin: 20px 0;
+}
+.social-media a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 24px;
+}
+.social-media a:hover {
+  color: #555;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.text-content {
+  max-width: 70%; 
+}
+
+.profile-image {
+  width: 200px; 
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid gray;
+  margin-left: 20px;
+  padding: 5px; 
+  margin: 15px;
+  /* make slightly bigger when hover */
+  /* add spotify thing */
+  /* reposition a little bit */
+}
+
+.bio {
+  text-align: left;
+  margin: 15px;
+  margin-top: 20px;
+  color: #000;
+}
+
+h2 {
+  margin: 15px; 
+  font-size: 40px;
+  color: gray;
+}
+
+footer {
+  color: gray;
+  text-align: center;
+  margin: 10px;
 }
