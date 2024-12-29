@@ -113,7 +113,7 @@ h1 {
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-bottom: 20px;
 }
 
@@ -159,3 +159,79 @@ footer {
   text-align: center;
   margin: 10px;
 }
+
+/* Projects */
+
+
+.project-tile {
+  background-color: #F2F1F0;
+  border-radius: 20px;
+  display: flex;
+  overflow: auto;
+  overflow-x: hidden;
+  width: calc(100% - 10px);
+  height: 150px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.project-tile:hover {
+  background-color: #EBE9E7;
+}
+
+.project-images {
+  padding: 10px;
+}
+
+.project-images img {
+  width:130px;
+  height: 130px;
+  border-radius: 15%;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 10px;
+}
+
+.project-content .project-heading {
+  display: flex;
+  align-items: center;
+}
+
+h4 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-right: 7px;
+  padding-top: 0;
+  margin-bottom: 4px;
+}
+
+.project-content p {
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom:4px;
+}
+
+a {
+  color: #333;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #4a6351;
+}
+
+.project-icons {
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  gap: 7px; 
+}
+
+.project-icons i {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* need to figure out how to make image un-scrollable, and also modal. */
